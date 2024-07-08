@@ -5,6 +5,14 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -28,35 +36,110 @@
   </head>
   <body>
     <header class="header">
-      <img src="./img/home.png" alt="" />
-      <p>Jiggyl <span>Store</span></p>
-
-      <div class="serch">
-        <input type="search" name="" id="" placeholder="I am shopping for" />
-        <img src="./img/search.png" alt="" />
+      <div class="logo">
+        <img src="./img/home.png" alt="" />
+        <strong>Jiggyl<span>Stores</span></strong>
       </div>
 
-      <div>
-        <img src="./img/mynaui_cart.png" alt="" />
+      <div class="serch">
+        <input
+          type="search"
+          name=""
+          id="search"
+          placeholder="I am shopping for"
+        />
+        <i class="fa-solid fa-magnifying-glass" style="color: #fff" ;></i>
+      </div>
+
+      <div class="shop">
+        <i class="fa-solid fa-cart-shopping" style="color: #f53d0f"></i>
         <img src="./img/contact.png" alt="" />
       </div>
     </header>
 
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Discounts</a></li>
-        <li><a href="#">Top brands</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Clearance sales</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="list-item">
+          <a class="main-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Discounts</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Top brands</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Services</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Clearance sales</a>
+        </li>
+        <li class="list-item"><a class="main-nav-link" href="#">Contact</a></li>
       </ul>
     </nav>
 
-    <h3 class="promo">Black Friday: Extra 20% Off if you buy now!</h3>
+    <main>
+      <h3 class="promo">Black Friday: Extra 20% Off if you buy now!</h3>
 
-    <h2 class="hot-picks">Hot picks for you</h2>
+      <h2 class="hot-picks center" style="display: block">Hot picks for you</h2>
+      <div class="cards center">
+        <a href="./item.html">
+          <div class="card">
+            <img src="./img/ear-bud.png" alt="" class="card-img" />
+            <div class="card-price">
+              <strong class="current-price">15, 000</strong>
+              <span class="old-price">18,000</span>
+              <span class="discount">20% off</span>
+            </div>
+            <span>300 + Sold ⭐ 4.6</span>
+          </div>
+        </a>
+        <div class="card">
+          <img src="./img/watch.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+        <div class="card">
+          <img src="./img/plasma.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+        <div class="card">
+          <img src="./img/power-bank.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+        <div class="card">
+          <img src="./img/laptop.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+      </div>
 
+      <nav class="product-nav">
+        <a href="#">Recommended</a>
+        <a href="#">Home appliances</a>
+        <a href="#">Gadgets</a>
+        <a href="#">Electronics</a>
+        <a href="#">Security Gadgets</a>
+      </nav>
+    </main>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -70,11 +153,70 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
-      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <section class="features-section center">
+      <div class="feature one">
+        <img src="./img/award.png" alt="" />
+        <div class="feature-text">
+          <h3>1 Year Warranty</h3>
+          <p>All our products come with a year free warranty.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./img/truck.png" alt="" />
+        <div class="feature-text">
+          <h3>Same Day Delivery</h3>
+          <p>Our delivery is within 24 hours after payment confirmation</p>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="./img/earpiece.png" alt="" />
+        <div class="feature-text">
+          <h3>Active Support</h3>
+          <p>Our support team are always on standby to respond to your calls</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta">
+      <h2 class="join">Join Our Newsletter</h2>
+      <input type="email" placeholder="Enter your email" name="" id="email" />
+      <button class="subscribe">Subscribe</button>
+    </section>
+
+    <footer class="center">
+      <div class="one">
+        <div class="logo">
+          <img src="./img/home.png" alt="" />
+          <strong>Jiggyl<span>Stores</span></strong>
+        </div>
+        <p>
+          Jiggyl strores offers the best gadgets and household electronic with
+          25 years market experience.
+        </p>
+      </div>
+      <div class="one">
+        <li class="footer-list"><a class="" href="#">Home</a></li>
+        <li class="footer-list"><a class="" href="#">About Us</a></li>
+        <li class="footer-list"><a class="" href="#">Voucher</a></li>
+      </div>
+      <div class="one">
+        <li class="footer-list"><a href="#">Delivery</a></li>
+        <li class="footer-list"><a href="#">FAQs</a></li>
+        <li class="footer-list"><a href="#">Services</a></li>
+      </div>
+      <div class="one">
+        <li class="footer-list"><a href="#">Clearance Sales</a></li>
+        <li class="footer-list"><a href="#">Terms & Condition</a></li>
+        <li class="footer-list"><a href="#">Contact Us</a></li>
+      </div>
+      <div class="one">
+        <h2>Download Our Free App</h2>
+        <p>Get access to exclusive offers!</p>
+        <div class="footer-app">
+          <img src="./img/google.png" alt="" />
+          <img src="./img/app-store.png" alt="" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

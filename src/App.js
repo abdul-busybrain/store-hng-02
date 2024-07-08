@@ -22,22 +22,147 @@ import "./App.css";
 //   );
 // }
 
-// function Header() {
-//   return (
-//     <div className="Header">
-//       <img className="search" src={require("./img/home.png")} alt={"Hy"} />
+function Items() {
+  return (
+    <>
+      <div className="Items">
+        <div className="Item">
+          <img className="Wide" src={require("./img/ear-bud.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/speaker.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/tv.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+      </div>
+      <div className="Items">
+        <div className="Item">
+          <img
+            className="Wide"
+            src={require("./img/camera-head.png")}
+            alt={""}
+          />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/mp3.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/iphone.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+      </div>
+      <div className="Items">
+        <div className="Item">
+          <img className="Wide" src={require("./img/lighting.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/tecno.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/watch.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+      </div>
+      <div className="Items">
+        <div className="Item">
+          <img
+            className="Wide"
+            src={require("./img/power-bank.png")}
+            alt={""}
+          />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/game.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+        <div className="Item">
+          <img className="Wide" src={require("./img/scooter.png")} alt={""} />
+          <div className="NameAndPrice">
+            <p>Original ear buds </p>
+            <span className="Price">N 25,000</span>
+          </div>
+          <div className="Stats">
+            <span>500 + Sold ⭐ 4.5</span>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
 
-//       <span>
-//         Jiggyl <span>Stores</span>
-//       </span>
-
-//       <input type="search" placeholder="I am shopping for"></input>
-
-//       <img className="Cart" src={require("./img/mynaui_cart.png")} />
-
-//       <img className="Contact" src={require("./img/contact.png")} />
-//     </div>
-//   );
-// }
-
-// export default Header;
+export default Items;
