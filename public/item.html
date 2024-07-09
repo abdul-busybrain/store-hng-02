@@ -18,6 +18,34 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./item.css" />
+    <style>
+      .popup {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+      }
+      .popup-content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888888;
+        width: 30%;
+        font-weight: bolder;
+      }
+      .popup-content button {
+        display: block;
+        margin: 0 auto;
+      }
+      .show {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -80,7 +108,31 @@
 
           <div class="add-to-cart">
             <input type="number" name="" id="" />
-            <button type="submit">Add to Cart</button>
+            <button type="submit"></button>
+
+            <!-- pop up -->
+            <button id="myButton">Add to Cart</button>
+            <div id="myPopup" class="popup">
+              <div class="popup-content">
+                <h1 style="color: green">Earbud</h1>
+                <p>Added to your cart!</p>
+                <button id="closePopup">Close</button>
+              </div>
+            </div>
+
+            <script>
+              myButton.addEventListener("click", function () {
+                myPopup.classList.add("show");
+              });
+              closePopup.addEventListener("click", function () {
+                myPopup.classList.remove("show");
+              });
+              window.addEventListener("click", function (event) {
+                if (event.target == myPopup) {
+                  myPopup.classList.remove("show");
+                }
+              });
+            </script>
             <i class="fa-regular fa-heart"></i>
           </div>
           <div>
