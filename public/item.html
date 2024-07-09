@@ -1,16 +1,215 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Item</title>
-    <meta name="description" content="" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./item.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./img/home.png" alt="" />
+        <strong>Jiggyl<span>Stores</span></strong>
+      </div>
+
+      <div class="serch">
+        <input
+          type="search"
+          name=""
+          id="search"
+          placeholder="I am shopping for"
+        />
+        <i class="fa-solid fa-magnifying-glass" style="color: #fff" ;></i>
+      </div>
+
+      <div class="shop">
+        <i class="fa-solid fa-cart-shopping" style="color: #f53d0f"></i>
+        <img src="./img/contact.png" alt="" />
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li class="list-item">
+          <a class="main-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Discounts</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Top brands</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Services</a>
+        </li>
+        <li class="list-item">
+          <a class="main-nav-link" href="#">Clearance sales</a>
+        </li>
+        <li class="list-item"><a class="main-nav-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h3 class="promo">Black Friday: Extra 20% Off if you buy now!</h3>
+
+      <div class="item-view center">
+        <div class="item-img">
+          <img src="./img/ear-bud.png" alt="" />
+        </div>
+        <div class="item-text">
+          <div class=".item-header">
+            <h1>N 15, 000</h1>
+            <del>N 18,000</del>
+          </div>
+          <p>Status:</p>
+          <span>In stock</span>
+
+          <div class="add-to-cart">
+            <input type="number" name="" id="" />
+            <button type="submit">Add to Cart</button>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <strong>Category</strong>
+            : <span>Earbud</span>
+          </div>
+          <div>
+            <strong>Description</strong>
+            :
+            <span
+              >Limited edition iphone series earbuds, best sound effect, It is
+              available in black, gold and gray.</span
+            >
+          </div>
+
+          <div>
+            <strong>Reviews</strong>
+            <span><img src="./img/down.png" alt="" /></span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="related promo">Related Products</h2>
+      <div class="cards center">
+        <a href="./item.html">
+          <div class="card">
+            <img src="./img/rel-img.png" alt="" class="card-img" />
+            <div class="card-price">
+              <strong class="current-price">15, 000</strong>
+              <span class="old-price">18,000</span>
+              <span class="discount">20% off</span>
+            </div>
+            <span>300 + Sold ⭐ 4.6</span>
+          </div>
+        </a>
+        <div class="card">
+          <img src="./img/rel-img1.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+        <div class="card">
+          <img src="./img/rel-img2.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+        <div class="card">
+          <img src="./img/rel-img3.png" alt="" class="card-img" />
+          <div class="card-price">
+            <strong class="current-price">15, 000</strong>
+            <span class="old-price">18,000</span>
+            <span class="discount">20% off</span>
+          </div>
+          <span>300 + Sold ⭐ 4.6</span>
+        </div>
+      </div>
+
+      <section class="features-section center">
+        <div class="feature one">
+          <img src="./img/award.png" alt="" />
+          <div class="feature-text">
+            <h3>1 Year Warranty</h3>
+            <p>All our products come with a year free warranty.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="./img/truck.png" alt="" />
+          <div class="feature-text">
+            <h3>Same Day Delivery</h3>
+            <p>Our delivery is within 24 hours after payment confirmation</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="./img/earpiece.png" alt="" />
+          <div class="feature-text">
+            <h3>Active Support</h3>
+            <p>
+              Our support team are always on standby to respond to your calls
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="center">
+      <div class="one logo-text">
+        <div class="logo">
+          <img src="./img/home.png" alt="" />
+          <strong>Jiggyl<span>Stores</span></strong>
+        </div>
+        <p>
+          Jiggyl strores offers the best gadgets and household electronic with
+          25 years market experience.
+        </p>
+      </div>
+      <div class="one">
+        <li class="footer-list"><a class="" href="#">Home</a></li>
+        <li class="footer-list"><a class="" href="#">About Us</a></li>
+        <li class="footer-list"><a class="" href="#">Voucher</a></li>
+      </div>
+      <div class="one">
+        <li class="footer-list"><a href="#">Delivery</a></li>
+        <li class="footer-list"><a href="#">FAQs</a></li>
+        <li class="footer-list"><a href="#">Services</a></li>
+      </div>
+      <div class="one">
+        <li class="footer-list"><a href="#">Clearance Sales</a></li>
+        <li class="footer-list"><a href="#">Terms & Condition</a></li>
+        <li class="footer-list"><a href="#">Contact Us</a></li>
+      </div>
+      <div class="one download">
+        <h2>Download Our Free App</h2>
+        <p>Get access to exclusive offers!</p>
+        <div class="footer-app">
+          <img src="./img/google.png" alt="" />
+          <img src="./img/app-store.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <div class="footer-down center">
+      <img src="./img/socials.png" alt="" />
+      <span>Copyright &copy; 2024, JiggylStores All rights reserved</span>
+    </div>
+  </body>
 </html>

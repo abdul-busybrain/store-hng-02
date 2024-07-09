@@ -217,8 +217,31 @@ footer {
   padding-bottom: 1rem;
 }
 
+.logo-text {
+  text-align: left;
+}
+
 .footer-list a {
   color: black;
+}
+
+.footer-app {
+  display: flex;
+  gap: 2rem;
+}
+
+.download h2 {
+  font-size: 2rem;
+}
+
+.footer-down {
+  display: flex;
+  background-color: #fff6f6;
+  gap: 30rem;
+}
+
+.footer-down span {
+  font-size: 1.2rem;
 }
 
 li,
